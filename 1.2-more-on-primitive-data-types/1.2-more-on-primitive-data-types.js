@@ -57,7 +57,7 @@ str = "He's got it!";
 let bill = 200;
 let tax = bill * 0.17;
 let pay = ("Your total bill is " + (bill + tax) + "$");
-// console.log(pay);
+// console.log(pay);Phrease
 
 // Round the number 50.6 to its nearest integer
 let rounded = Math.round(50.6);
