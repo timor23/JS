@@ -1,30 +1,11 @@
-let date = new Date();
-const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
-const monthNames = ["January", "February", "March", "April", "May", "June",
-    "July", "August", "September", "October", "November", "December"
-];
-​
-function getDayName() {
-    return days[date.getDay()]
-}
-​
-function getDayOfMonth() {
-    return date.getDate()
-}
-​
-function getMonthName() {
-    return monthNames[date.getMonth()];
+let sign = prompt("What's your sign?");
+
+if (sign.toLowerCase() == "scorpio") {
+  alert("Wow! I'm a Scorpio too!");
 }
 
-​
-function getYear() {
-    return date.getFullYear();
-}
-​
-//`Today is Sunday the 31 of January, 2021’
-function getDateFormat() {
-    // return `Today is ${getDayName()} the ${getDayOfMonth()} of ${getMonthName()}, ${getYear()}`;
-    return `Today is ' + getDayName() the ${getDayOfMonth()} of ${getMonthName()}, ${getYear()};
-}
-​
-console.log(getDateFormat())
+// there are many ways to use the prompt feature
+sign = window.prompt(); // open the blank prompt window
+sign = prompt();       //  open the blank prompt window
+sign = window.prompt('Are you feeling lucky'); // open the window with Text "Are you feeling lucky"
+sign = window.prompt('Are you feeling lucky', 'sure'); // open the window with Text "Are you feeling lucky" and default value "sure"
