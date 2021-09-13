@@ -25,3 +25,5 @@ function assignGrade(grade) {
             return `invalid input!`;
     }
 }
+
+// console.log(assignGrade(-50));
