@@ -1,4 +1,4 @@
-const arr = [1, 7, 3, 1, -5, 7, 3, 9];
+const arr = [1, 7, 3, 0, -5, 7, 3, 9];
 
 function printArray(arr) {
     for (let i = 0 ; i < arr.length ; i++) {
@@ -30,7 +30,7 @@ function arrayMulti(arr) {
     return mul;
 }
 
-
+printArray(arr);
 console.log(`Array arr[] length is ${arrayLength(arr)}`);
 console.log(`Array arr[] elements sum is ${arraySum(arr)}`);
 console.log(`Array arr[] elements multipication is ${arrayMulti(arr)}`);
