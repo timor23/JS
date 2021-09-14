@@ -1,14 +1,17 @@
 function avgJumper(arr) {
     let avgJumperArr = [];
-    numOfJumpers = arr.length / 3;
-    arr.forEach(element => {    // get rid of negative score
-        if (arr[element] < 0) {
-            arr[element] = 0;
-        }
-    });
+    // numOfJumpers = arr.length / 3;
 
     for (let i = 0 ; i < arr.length ; i+=3) {
-        let avg = (arr[i] + arr[i+1] + arr[i+2]) / 3;
+        let validJumps = 0;
+        for (let j = 0 ; j < 3 ; j++) {
+            if (arr[i+j] > 0) {
+                validJumps++;
+            } else {
+                arr[i+j] = 0;
+            }
+        }
+        let avg = (arr[i] + arr[i+1] + arr[i+2]) / validJumps;
         avgJumperArr.push(avg);
     }
     return avgJumperArr;
