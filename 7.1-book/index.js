@@ -1,4 +1,4 @@
-let book = {
+const book = {
     title: `"Thinking, Fast and Slow"`,
     author: "Daniel Kahneman",
     publishYear: 2011,
