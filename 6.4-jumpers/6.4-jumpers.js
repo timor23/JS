@@ -1,7 +1,7 @@
 function avgJumper(arr) {
     let avgJumperArr = [];
     numOfJumpers = arr.length / 3;
-    arr.forEach(element => {    // git rid of negative score
+    arr.forEach(element => {    // get rid of negative score
         if (arr[element] < 0) {
             arr[element] = 0;
         }
