@@ -7,7 +7,23 @@ const candyStore = {
 };
 
 function getCandy(candyStore, id) {
-    return candyStore.id = id;
+    return candyStore.candies.find((obj) => {
+        return obj.id === id;
+    });
 }
 
-console.log(getCandy(candyStore, 'as12f'));
+function getPrice(candyStore, id) {
+    return getCandy(candyStore,id).price;
+}
+
+function addCandy(candyStore, id, name, price) {
+    candyStore.candies.push({name: name, id: id, price: price, amount : 1});
+}
+
+function buy(candyStore, id) {
+    let candy = getCandy(candyStore, id);
+    candyStore.cashRegister -= getPrice(candyStore, id);
+    getCandy(candyStore, id).amount --;
+}
+
+
