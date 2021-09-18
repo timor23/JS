@@ -41,9 +41,12 @@ let bookUtils = {
         }
     },
 
-    // isSamePublisher: function(book1, book2) {
-    //     return (book1.publisher.location === book2.publisher.location);
-    // }
+    isSamePublisher: function(book1, book2) {
+        return (
+            book1.publisher.name === book2.publisher.name &&
+            book1.publisher.location === book2.publisher.location
+        );
+    }
 };
 
 
@@ -59,15 +62,10 @@ console.log(book2.traslation.language);
 console.log(book2.traslation.translator);
 
 bookUtils.setPublisher(book1, `Farrar, Straus and Giroux`, `Equitable Building, New York, New York`);
+bookUtils.setPublisher(book2, `Farrar, Straus and `, `Equitable Building, New York, New York`);
 
-console.log(book1.publisher.name);
-console.log(book1.publisher.location);
+console.log(bookUtils.isSamePublisher(book1, book2)); // false
+bookUtils.setPublisher(book2, `Farrar, Straus and Giroux`, `Equitable Building, New York, New York`);
 
-// console.log(bookUtils.isSamePublisher(book1, book2)); // false
-
-// bookUtils.setPublisher(book2, `Farrar, Straus and Giroux`, `Equitable Building, New York, New York`);
-// console.log(bookUtils.isSamePublisher(book1, book2)); // true
-
-// console.log(book1.publisher.name);
-// console.log(book1.publisher.location);
+console.log(bookUtils.isSamePublisher(book1, book2)); // true
 
