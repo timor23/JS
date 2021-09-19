@@ -15,3 +15,11 @@ var library = [
         readingStatus: false,
     },
 ];
+
+function canBeRead(lib) {
+    return lib.filter(element => {
+        if (element.readingStatus) return element;
+    })
+}
+
+console.log(canBeRead(library));
