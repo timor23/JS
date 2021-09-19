@@ -6,9 +6,25 @@ function printStr(str) {
     console.log(str);
 }
 
+
+function firstWordUpperCase(str, func) {
+    str = str.split(' ');
+    str[0] = str[0].toUpperCase();
+    return func(str);
+}
+
+function addDashes(arr) {
+    return arr.join(`-`);
+}
+
 function checkLength(str) {
-    console.log(str.length);
+    return str.join(" ").length;
 }
 
 isString("Hello And Welcome", printStr);
-isString("Hello And Welcome", checkLength);
+
+let r = firstWordUpperCase("Hello And Welcome", addDashes);
+console.log(r);
+
+let s = firstWordUpperCase("Hello And Welcome", checkLength);
+console.log(s);
