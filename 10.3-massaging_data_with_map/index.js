@@ -55,7 +55,7 @@ function bornBefore90s(data) {
 }
 
 //3.
-function ggg(data) {
+function countFoods(data) {
     let ret = new Map;
     let det = data.map(element => {
         return element.favoriteFoods.meats.concat(element.favoriteFoods.fish) ;
@@ -67,4 +67,4 @@ function ggg(data) {
         return obj;
     }, {});
 }
-console.log(ggg(data));
+console.log(countFoods(data));
