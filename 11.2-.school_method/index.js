@@ -68,7 +68,7 @@ const school = {
         }
     },
     //4.
-    showStudentsThatMightDieBeforeTheEndOfTheSemester: function() {
+    showStudentsTooOldToBInSchool: function() {
         return this.students.filter(obj => obj.age > 80);
     }
 };
@@ -85,4 +85,4 @@ school.assignTeachersSubject(1, `math`);
 let a = school.findPerson("teacher", 1);
 console.log(a);
 //4.
-console.log(school.showStudentsThatMightDieBeforeTheEndOfTheSemester());
+console.log(school.showStudentsTooOldToBInSchool());
