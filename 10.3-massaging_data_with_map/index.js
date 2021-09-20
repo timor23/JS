@@ -61,10 +61,10 @@ function countFoods(data) {
         return element.favoriteFoods.meats.concat(element.favoriteFoods.fish) ;
     })
     det = [].concat.apply([], det);
-    console.log(det);
+    // console.log(det);
     return det.reduce((obj, e) => {
         obj[e] = (obj[e] || 0) + 1;
         return obj;
     }, {});
 }
-console.log(countFoods(data));
+console.log(getNames(data));
