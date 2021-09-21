@@ -8,3 +8,4 @@ function calcAverage (arr){
 let r = calcAverage  ([85, 90, 92]);
 console.log(r);
 
+// used debugger, found the bug, fixed it!!!
