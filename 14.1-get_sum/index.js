@@ -12,6 +12,6 @@ console.log(getSum([1,2,3], [5,66,23]));
 
 //1. line 2: sum shouldn't be const,
 //   line 10: ([1,2,3],[5,66,23])
-//2. ...... I used something called "Debugger" :)
+//2. ...... webstorm debugger
 // I don't like this kind of questions ... I know how to debug and that's it
 //4. code fixed
