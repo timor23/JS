@@ -26,7 +26,7 @@ submit.addEventListener(`click`, ()=> {
         newDiv.innerHTML = `Enter a number`;
     }
     for (let i = 0; i < input.value; i++) {
-        addSmiley()
+        addSmiley();
     }
 });
 
