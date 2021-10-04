@@ -1,5 +1,6 @@
 const wordsArr = ["sound", "week", "minute", "fan", "explode"];
 const wordsArr2 = ["pray", "flower", "duty", "wound", 88];
+
 function makeAllCaps(words) {
     return new Promise(((resolve, reject) => {
         if (words.every((word) => typeof word === 'string')) {
