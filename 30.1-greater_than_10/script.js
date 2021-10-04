@@ -1,9 +1,11 @@
 function greaterThanTen(n) {
     return new Promise(((resolve, reject) => {
         if (n > 10) {
-            resolve(`${n} is greater than 10.`)
+            resolve(`${n} is greater than 10.`);
+        } else if (n == 10){
+            resolve(`${n} is equal than 10.`);
         } else {
-            reject(`${n} is not greater than 10.`)
+            reject(`${n} is smaller than 10.`);
         }
     }))
 }
