@@ -12,7 +12,7 @@ function printName() {
 
 function printHeroes(heroes, printFunc) {
     heroes.map(hero => {
-        printFunc.call(hero);
+        printFunc.apply(hero);
     });
 }
 
