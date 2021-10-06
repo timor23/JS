@@ -53,7 +53,7 @@ async function createTable() {
     table.appendChild(tr2);
     for (let i = 2; i < 12; i++) {
         let tr = document.createElement(`tr`);
-        if (i%2==0) {
+        if (i % 2 == 0) {
             tr.style.backgroundColor = `#edf9d2`;
         } else {
             tr.style.backgroundColor = `#e1f5b7`;
