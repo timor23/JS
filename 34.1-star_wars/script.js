@@ -2,6 +2,8 @@ const table = document.createElement('table');
 table.style.borderCollapse = 'collapse';
 document.body.append(table);
 
+document.title = "Star Wars";
+
 
 async function getPeople() {
     const URL = `https://swapi.dev/api/people/`;
