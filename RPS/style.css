@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #cccccc;
+}
+
+h1 {
+    text-align: center;
+    font-size: xxx-large;
+}
+#container {
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+    width: 60vw;
+    height: 100vh;
+}
+
+#computer-choice {
+    margin: auto;
+}
+#my-choice {
+    display: flex;
+    align-content: center;
+    text-align: center;
+    justify-content: space-around;
+    height: 300px;
+    width: 70vw;
+    margin: auto;
+}
+
+.rock {
+    background: url("./img/rock.png") no-repeat center/cover;
+    width: 285px;
+    height: 422px;
+}
+
+.paper {
+    background: url("./img/paper.png") no-repeat center/cover;
+}
+
+.scissors {
+    background: url("./img/scissors.png") no-repeat center/cover;
+}
+
+#computer-choice,
+.rock,
+.paper,
+.scissors {
+    width: 285px;
+    height: 422px;
+    border-radius: 10px;
+}
